@@ -1,26 +1,40 @@
 package com.example.quiltingapp;
 
 import com.example.quiltingapp.Supplies;
+import com.example.quiltingapp.Fabrics.StartServiceListener_2;
+import com.example.quiltingapp.Fabrics.StartServiceListener_3;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Supplies extends ActionBarActivity {
 
-	private LinearLayout linear_1 = null;
+	private LinearLayout linear_11 = null;
+	private Button addnewsupply = null;
+	private ImageView imageView3=null;
+    private EditText editText=null;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_supplies);
-        linear_1 = (LinearLayout) findViewById(R.id.linear_1);
-		
-		linear_1.setOnClickListener(new StartServiceListener_1());
+        linear_11 = (LinearLayout) findViewById(R.id.linear_11);
+        imageView3 =(ImageView) findViewById(R.id.imageView3);
+		editText = (EditText) findViewById(R.id.editText);
+		linear_11.setOnClickListener(new StartServiceListener_1());
+		imageView3.setOnClickListener(new StartServiceListener_3());
+		addnewsupply = (Button) findViewById(R.id.button1);
+		addnewsupply.setOnClickListener(new StartServiceListener_2());
+	
 	}
 
 	@Override
@@ -45,9 +59,40 @@ public class Supplies extends ActionBarActivity {
 
         @Override
         public void onClick(View v) {
-            Intent intent1 = new Intent();
-            intent1.setClass(Supplies.this, Supply_1.class);
-            startActivity(intent1);
+            Intent intent22 = new Intent();
+            intent22.setClass(Supplies.this, Supply_1.class);
+            startActivity(intent22);
+        }
+
+    }
+	class StartServiceListener_2 implements OnClickListener {
+
+        @Override
+        public void onClick(View v) {
+        	Log.d("check","check");
+            Intent intent222 = new Intent();
+            intent222.setClass(Supplies.this, Addnewsupply.class);
+            startActivity(intent222);
+        }
+
+    }
+	class StartServiceListener_3 implements OnClickListener {
+
+        @Override
+        public void onClick(View v) {
+        	
+        	String query;
+        	Supplylist Supplylist1 =new Supplylist();
+        	//FabricOpenHelper dbhelper= new FabricOpenHelper(); 	
+        	query="SELECT * FROM Supplystats " + " WHERE " 
+                    + Supplylist1.getID() + "=" +  editText.getText()+" OR "+
+                    Supplylist1.getAmount()+ "=" +  editText.getText()+" OR "+
+                    Supplylist1.getPrice()+ "=" +  editText.getText()+" OR "+
+                    Supplylist1.getName()+ "=" +  editText.getText()+" OR "+
+                    Supplylist1.getNotes()+ "=" +  editText.getText()+" OR "+
+                    Supplylist1.getStore()+ "=" +  editText.getText()+" OR "+
+                    Supplylist1.getPic()+ "=" +  editText.getText();
+        	        Log.d("query",query);
         }
 
     }

@@ -26,9 +26,10 @@
         android:id="@+id/supplies_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/compare_button"
+        android:layout_alignRight="@+id/compare_button"
         android:layout_below="@+id/fabricss_button"
+        android:layout_centerVertical="true"
         android:text="SUPPLIES" />
 
     <Button
@@ -45,7 +46,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/supplies_button"
-        android:layout_alignLeft="@+id/supplies_button"
+        android:layout_alignLeft="@+id/compare_button"
+        android:layout_alignRight="@+id/compare_button"
         android:layout_marginBottom="27dp"
         android:text="FABRICS" />
 

@@ -27,7 +27,7 @@ public class Supply_1 extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_fabric_1);
+		setContentView(R.layout.activity_supply_1);
 		EditText mEdit1 = (EditText) findViewById(R.id.editText1);
 		EditText mEdit2 = (EditText) findViewById(R.id.editText2);
 		EditText mEdit3 = (EditText) findViewById(R.id.editText3);
@@ -46,7 +46,7 @@ public class Supply_1 extends ActionBarActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.fabric_1, menu);
+		getMenuInflater().inflate(R.menu.supply_1, menu);
 		return true;
 		
 	}
@@ -67,13 +67,7 @@ public class Supply_1 extends ActionBarActivity {
 
         @Override
         public void onClick(View v) {
-        	mEdit1.setEnabled(true);
-        	mEdit2.setEnabled(true);
-        	mEdit3.setEnabled(true);
-        	mEdit4.setEnabled(true);
-        	mEdit5.setEnabled(true);
-        	mEdit6.setEnabled(true);
-        	mEdit7.setEnabled(true);
+        	setContentView(R.layout.activity_supply_edit);
         }
 
     }

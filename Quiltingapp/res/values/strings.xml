@@ -8,5 +8,9 @@
     <string name="title_activity_supplies">Supplies</string>
     <string name="title_activity_compare">Compare</string>
     <string name="title_activity_fabric_1">Fabric_1</string>
+    <string name="title_activity_supply_1">Supply_1</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+    <string name="title_activity_addnewfabric">Addnewfabric</string>
+    <string name="title_activity_addnewsupply">Addnewsupply</string>
 
 </resources>

@@ -2,46 +2,74 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent">
+
 <LinearLayout 
+
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" 
     >
 
     <LinearLayout
-        android:id="@+id/linear_1"
+        android:id="@+id/linear_11"
         android:layout_width="match_parent"
-        android:layout_height="70dp" >
+        android:layout_height="80dp" >
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/imageView1_add"
             android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_height="68dp"
             android:layout_marginTop="5dp"
-            android:layout_weight="0.37"
-            android:src="@drawable/aurifil" />
+            android:src="@drawable/addimage" />
 
-       <TextView
-            android:id="@+id/textView2"
+       
+
+        <Button
+            android:id="@+id/button2_adds"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="BROWSE FOR IMAGE" 
+            android:onClick="loadImagefromGallery"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#F5A9A9" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F8E0F7" >
+
+        <TextView
+            android:id="@+id/TextView01_names"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_weight="0.34"
-            android:text="  AURIFIL THREAD  "
+            android:text="NAME  "
             android:textColor="#000000"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
 
-       <Button
-           android:id="@+id/button2"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_marginRight="20dp"
-           android:layout_marginTop="5dp"
-           android:text="UPDATE" />
+        <EditText
+            android:id="@+id/editText1_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.34"
+            android:text=""
+            android:editable="true" 
+            android:inputType="none"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            >
+        <requestFocus />
+        </EditText>
 
     </LinearLayout>
-    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="5dp"
@@ -54,7 +82,7 @@
         android:background="#F8E0F7" >
 
         <TextView
-            android:id="@+id/TextView01"
+            android:id="@+id/TextView01_adds"
             android:layout_width="181dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -64,13 +92,13 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/editText1_adds"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="0.34"
-            android:text="$5.00"
-            android:editable="false" 
+            android:text=""
+            android:editable="true" 
             android:inputType="none"
             android:textAppearance="?android:attr/textAppearanceMedium"
             >
@@ -91,7 +119,7 @@
         android:background="#F8E0F7" >
 
         <TextView
-            android:id="@+id/TextView1"
+            android:id="@+id/TextView1_adds"
             android:layout_width="181dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -102,13 +130,13 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editText2_adds"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="0.34"
-            android:text="Yarn World "
-            android:editable="false" 
+            android:text=""
+            android:editable="true" 
             android:inputType="none"
             android:textAppearance="?android:attr/textAppearanceMedium"
             >
@@ -128,7 +156,7 @@
         android:background="#F8E0F7" >
 
         <TextView
-            android:id="@+id/TextView03"
+            android:id="@+id/TextView03_adds"
             android:layout_width="181dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -139,16 +167,16 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editText3_adds"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="0.34"
-            android:editable="false"
+            android:editable="true" 
             android:inputType="none"
-            android:text="2 Spools"
-            android:textAppearance="?android:attr/textAppearanceMedium" >
-
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+             >
           <requestFocus />
         </EditText>
     </LinearLayout>
@@ -159,13 +187,13 @@
         android:background="#F5A9A9" >
     </LinearLayout>
 
-<LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:background="#F8E0F7" >
 
         <TextView
-            android:id="@+id/TextView06"
+            android:id="@+id/TextView06_adds"
             android:layout_width="181dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -176,18 +204,15 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/editText4_adds"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:layout_weight="0.34"
-            android:text="$6.00"
-            android:editable="true" 
-			android:inputType="none"
-            android:textAppearance="?android:attr/textAppearanceMedium"            
-             >
-          <requestFocus />
-        </EditText>
+            android:editable="true"
+            android:ems="10"
+            android:inputType="none"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
     </LinearLayout>
      
     <LinearLayout
@@ -196,17 +221,13 @@
         android:background="#F5A9A9" >
     </LinearLayout>
      
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:background="#F5A9A9" >
-    </LinearLayout>
-  
+   
+
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button1_adds"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OK" />
+        android:text="SAVE" />
 
 </LinearLayout>
 </ScrollView>

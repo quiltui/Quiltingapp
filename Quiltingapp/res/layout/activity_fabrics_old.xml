@@ -1,8 +1,4 @@
-<ScrollView
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent">
-<LinearLayout 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" 
@@ -33,7 +29,7 @@
         </EditText>
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/search" />
@@ -52,11 +48,11 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_weight="1"
-            android:text="Add a new supply" />
+            android:text="Add a new fabric" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linear_11"
+        android:id="@+id/linear_1"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="#F8E0F7" >
@@ -65,8 +61,7 @@
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="0.04"
-            android:src="@drawable/batting" />
+            android:src="@drawable/fabric1" />
 
         <TextView
             android:id="@+id/textView2"
@@ -74,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="0.34"
-            android:text="  BATTING  "
+            android:text="  FABRIC 1  "
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
     </LinearLayout>
@@ -88,7 +83,7 @@
             android:id="@+id/ImageView02"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/aurifil" />
+            android:src="@drawable/fabric2" />
         
         <TextView
             android:id="@+id/textView3"
@@ -96,10 +91,78 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="0.34"
-            android:text="  AURIFIL THREAD  "
+            android:text="  FABRIC 2  "
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
     </LinearLayout>
-    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#F8E0F7" >
+
+        <ImageView
+            android:id="@+id/ImageView03"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/fabric3" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.34"
+            android:text="  FABRIC 3  "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
     </LinearLayout>
-    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#F8E0F7" >
+
+        <ImageView
+            android:id="@+id/ImageView04"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.06"
+            android:src="@drawable/fabric4" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.34"
+            android:text="  FABRIC 4  "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="0.06"
+        android:background="#F8E0F7" >
+
+        <ImageView
+            android:id="@+id/ImageView05"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.06"
+            android:src="@drawable/fabric5" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.34"
+            android:text="  FABRIC 5  "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

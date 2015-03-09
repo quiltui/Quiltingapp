@@ -3,6 +3,7 @@ package com.example.quiltingapp;
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -53,6 +54,7 @@ public class MainActivity extends ActionBarActivity {
         public void onClick(View v) {
             Intent intent1 = new Intent();
             intent1.setClass(MainActivity.this, Fabrics.class);
+            Log.d("check","check");
             startActivity(intent1);
         }
 
